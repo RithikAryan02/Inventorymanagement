@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Inventory Management System</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Inventory Management System</h1>
+  <div class="dashboard">
+
+    <div class="card">
+        <h3>Total Products</h3>
+        <p id="totalProducts">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Quantity</h3>
+        <p id="totalQty">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Low Stock Items</h3>
+        <p id="lowStock">0</p>
+    </div>
+
+</div>
+
+  <div class="container">
+    <select id="productCategory">
+    <option value="Electronics">Electronics</option>
+    <option value="Stationery">Stationery</option>
+    <option value="Furniture">Furniture</option>
+    <option value="Accessories">Accessories</option>
+</select>
+
+
+    <input type="text" id="productName" placeholder="Product Name">
+
+    <input type="number" id="productQty" placeholder="Quantity">
+
+    <input type="number" id="productPrice" placeholder="Price">
+
+    <button onclick="addProduct()">Add Product</button>
+
+    <button onclick="toggleDarkMode()">Dark Mode</button>
+
+    <button onclick="downloadCSV()">Export CSV</button>
+
+    <br><br>
+
+    <input type="text" id="search" placeholder="Search Product">
+
+  </div>
+
+  <table>
+
+    <thead>
+
+      <tr>
+        <th>Product</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total</th>
+        <th>Actions</th>
+      </tr>
+
+    </thead>
+
+    <tbody id="productList"></tbody>
+
+  </table>
+
+  <h2 id="totalValue"></h2>
+
+  <canvas id="inventoryChart"></canvas>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+body {
+
+  font-family: Arial, sans-serif;
+
+  padding: 20px;
+
+  background: #f4f4f4;
+
+  transition: 0.3s;
+}
+
+h1 {
+
+  text-align: center;
+}
+
+.container {
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+input {
+
+  padding: 10px;
+
+  margin: 5px;
+
+  width: 180px;
+}
+
+button {
+
+  padding: 10px 15px;
+
+  margin: 5px;
+
+  cursor: pointer;
+
+  border: none;
+
+  background: #333;
+
+  color: white;
+
+  border-radius: 5px;
+}
+
+button:hover {
+
+  opacity: 0.8;
+}
+
+table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background: white;
+
+  margin-top: 20px;
+}
+
+table th,
+table td {
+
+  border: 1px solid #ccc;
+
+  padding: 10px;
+
+  text-align: center;
+}
+
+.low-stock {
+
+  background-color: #ffb3b3;
+}
+
+#totalValue {
+
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.dark {
+
+  background: #222;
+
+  color: white;
+}
+
+.dark table {
+
+  background: #333;
+
+  color: white;
+}
+
+.dark input {
+
+  background: #444;
+
+  color: white;
+
+  border: 1px solid #777;
+}
+
+.dark button {
+
+  background: #555;
+}
+
+canvas {
+
+  margin-top: 30px;
+
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 10px;
+}
+.dashboard{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin:20px 0;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    min-width:180px;
+    text-align:center;
+}
+
+.low-stock{
+    background-color:#ffdddd;
+}
